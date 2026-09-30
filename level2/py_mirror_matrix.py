@@ -1,0 +1,5 @@
+def mirror_matrix(matrix: list[list[int]]) -> list[list[int]]:
+    ...
+
+# Given a 2D matrix (list of lists), return a new matrix where each row
+# is reversed.

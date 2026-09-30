@@ -1,0 +1,4 @@
+def shadow_merge(list1: list[int], list2: list[int]) -> list[int]:
+    ...
+
+# Write a function that merges two sorted lists into one sorted list.
