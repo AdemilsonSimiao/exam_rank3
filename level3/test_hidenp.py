@@ -1,28 +1,15 @@
-Input
-hidenp("abc", "a1b2c3")
-Output
-True
-Input
-hidenp("ace", "abcde")
-Output
-True
-Input
-hidenp("aec", "abcde")
-Output
-False
-Input
-hidenp("", "abc")
-Output
-True
-Input
-hidenp("abc", "ab")
-Output
-False
-Input
-hidenp("aaaa", "aaa")
-Output
-False
-Input
-hidenp("sing","subsequence testing")
-Output
-True
+import unittest
+from py_hidenp import hidenp
+
+
+class TestHidenp(unittest.TestCase):
+    def test_true_cases(self):
+        self.assertTrue(hidenp("abc", "a1b2c3"))
+        self.assertTrue(hidenp("ace", "abcde"))
+        self.assertTrue(hidenp("", "abc"))
+        self.assertTrue(hidenp("sing","subsequence testing"))
+
+    def test_false_cases(self):
+        self.assertFalse(hidenp("aec", "abcde"))
+        self.assertFalse(hidenp("abc", "ab"))
+        self.assertFalse(hidenp("aaaa", "aaa"))
