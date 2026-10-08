@@ -1,10 +1,10 @@
 def hidenp(small: str, big: str) -> bool:
     it = iter(big)
-    return all(c in it for c in small)
+    return all( c in it for c in small)
 
 def main():
-    print(hidenp("oi", "Olai"))
-    
+    print(hidenp("", "abc"))
+
 if __name__ == "__main__":
     main()
 

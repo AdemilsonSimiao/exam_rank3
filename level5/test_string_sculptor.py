@@ -1,20 +1,11 @@
-Input
-string_sculptor("hello")
-Output
-"hElLo"
-Input
-string_sculptor("Hello World")
-Output
-"hElLo wOrLd"
-Input
-string_sculptor("abc123def")
-Output
-"aBc123DeF"
-Input
-string_sculptor("Python3.9!")
-Output
-"pYtHoN3.9!"
-Input
-string_sculptor("")
-Output
-""
+import unittest
+from py_string_sculptor import string_sculptor
+
+
+class TestStringSculptor(unittest.TestCase):
+    def test_string_cases(self):
+        self.assertEqual(string_sculptor("hello"), "hElLo")
+        self.assertEqual(string_sculptor("Hello World"), "hElLo wOrLd")
+        self.assertEqual(string_sculptor("abc123def"), "aBc123DeF")
+        self.assertEqual(string_sculptor("Python3.9!"), "pYtHoN3.9!")
+        self.assertEqual(string_sculptor(""), "")

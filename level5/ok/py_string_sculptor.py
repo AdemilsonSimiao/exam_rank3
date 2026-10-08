@@ -1,8 +1,19 @@
 def string_sculptor(text: str) -> str:
-    ...
+    result = ""
+    i = 0
+    for c in text:
+        if c == " ":
+            i = 0
+            result += c
+        elif c.isalpha():
+            result += c.lower() if i % 2 == 0 else c.upper()
+            i += 1
+        else:
+            result += c
+    return result
 
 def main():
-    print(string_sculptor("a bc"))
+    print(string_sculptor("ab"))
 
 if __name__ == "__main__":
     main()

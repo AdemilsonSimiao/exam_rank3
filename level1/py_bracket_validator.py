@@ -1,11 +1,11 @@
 def bracket_validator(s: str) -> bool:
    ...
 
-# def main():
-#     print(bracket_validator("({})"))
+def main():
+    print(bracket_validator("({)"))
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 
 # Write a function that checks if the brackets in a string are valid.

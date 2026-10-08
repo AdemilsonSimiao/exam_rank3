@@ -1,9 +1,9 @@
 def echo_validator(text: str) -> bool:
-   ...
-
+    clean = [c.lower() for c in text if c.isalpha()]
+    return clean == clean[::-1] if clean else False
 
 def main():
-    print(echo_validator("an;A"))
+    print(echo_validator("a"))
     
 if __name__ == "__main__":
     main()

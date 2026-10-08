@@ -1,5 +1,6 @@
 def cryptic_sorter(strings: list[str]) -> list[str]:
     ...
+        
 
 def main():
     print(cryptic_sorter(["hello","world","hi","test"]))

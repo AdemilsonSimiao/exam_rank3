@@ -1,7 +1,11 @@
 def twist_sequence(arr: list[int], k: int) -> list[int]:
-   ...
+    if not arr:
+        return arr
+    k %= len(arr)
+    return arr[-k:] + arr[:-k]
+
 def main():
-    print(twist_sequence([1, 2, 3], 2))
+    print(twist_sequence([1,2,3,4,5], 2))
 
 if __name__ == "__main__":
     main()

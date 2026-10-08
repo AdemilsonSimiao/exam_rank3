@@ -1,16 +1,5 @@
 def number_base_converter(number: str, from_base: int, to_base: int) -> str:
-    if not (2 <= from_base <= 36 and 2 <= to_base <= 36):
-        return "ERROR"
-    try:
-        decimal = int(number, from_base)
-    except ValueError:
-        return "ERROR"
-    digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    result = ""    
-    while decimal > 0 or not result:
-        result = digits[decimal % to_base] + result
-        decimal //= to_base
-    return result
+    ...
 
 
 def main():
