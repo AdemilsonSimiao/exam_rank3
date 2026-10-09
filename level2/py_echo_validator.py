@@ -1,9 +1,10 @@
 def echo_validator(text: str) -> bool:
-    clean = [c.lower() for c in text if c.isalpha()]
-    return clean == clean[::-1] if clean else False
+    checks = [c.lower() for c in text if c.isalpha()]
+    return checks == checks[::-1] if checks else False
+
 
 def main():
-    print(echo_validator("a"))
+    print(echo_validator("1"))
     
 if __name__ == "__main__":
     main()

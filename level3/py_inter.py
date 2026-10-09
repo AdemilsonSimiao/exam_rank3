@@ -6,7 +6,7 @@ def inter(s1: str, s2: str) -> str:
     return string
 
 def main():
-    print(inter("aaaabbbb", "bac"))
+    print(inter("aaaabbbbc", "bbbbbaaaacccc"))
 
 if __name__ == "__main__":
     main()

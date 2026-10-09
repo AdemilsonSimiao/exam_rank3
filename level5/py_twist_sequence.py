@@ -1,5 +1,8 @@
 def twist_sequence(arr: list[int], k: int) -> list[int]:
-   ...
+    if not arr:
+       return arr
+    return arr[-k:] + arr[:-k]
+
 def main():
     print(twist_sequence([1, 2, 3], 2))
 

@@ -1,5 +1,5 @@
 def shadow_merge(list1: list[int], list2: list[int]) -> list[int]:
-    return sorted(list1 + list2)
+    return sorted(list1) + sorted(list2)
 
 def main():
     print(shadow_merge([1,2,3], [4,5,6]))

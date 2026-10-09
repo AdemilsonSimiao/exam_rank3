@@ -1,10 +1,8 @@
 def anagram(s1: str, s2: str) -> bool:
-    c1 = sorted(s1.lower().replace(" ", ""))
-    c2 = sorted(s2.lower().replace(" ", ""))
-    return c1 == c2
+    return sorted(s1) == sorted(s2)
 
 def main():
-    print(anagram("ana", "ana"))
+    print(anagram("ana", "an"))
 
 if __name__ == "__main__":
     main()
